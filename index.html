@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayanao | Video Director / Motion Graphics</title>
+<meta name="description" content="映像クリエイター Ayanao のポートフォリオサイト。ミュージックビデオ、ブランドムービー、モーショングラフィックスなどの作品を掲載しています。">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ayanao | Video Director / Motion Graphics">
+<meta property="og:description" content="映像クリエイター Ayanao のポートフォリオサイト。ミュージックビデオ、ブランドムービー、モーショングラフィックスなどの作品を掲載しています。">
+<meta property="og:image" content="https://example.com/og-image.jpg">
+<meta property="og:url" content="https://example.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg" aria-hidden="true">
+      <div class="hero-bg-frame" id="heroBgFrame"></div>
+      <div class="hero-bg-overlay"></div>
+    </div>
+    <div class="hero-inner">
+      <h1 class="hero-name" id="heroName" aria-label="Ayanao">
+        <!-- letters injected by JS; noscript fallback below -->
+        <noscript>Ayanao</noscript>
+      </h1>
+      <p class="hero-sub reveal">Video Director / Motion Graphics</p>
+      <nav class="hero-nav reveal" aria-label="メインナビゲーション">
+        <a href="#works">WORKS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+    <div class="scroll-indicator reveal" aria-hidden="true">
+      <span class="scroll-text">SCROLL</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ===================== WORKS ===================== -->
+  <section class="works" id="works">
+    <div class="section-inner">
+      <h2 class="section-heading reveal"><span>WORKS</span></h2>
+      <div class="works-grid" id="worksGrid">
+        <!-- work cards injected by js/main.js from WORKS in js/works-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-heading reveal"><span>CONTACT</span></h2>
+
+      <p class="contact-mail-line reveal">
+        <span class="contact-mail-label">[ Mail ]</span>
+        <a class="contact-mail-value" href="mailto:ayanaocreate@gmail.com">ayanaocreate@gmail.com</a>
+      </p>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="fieldName">お名前 <span class="required">*</span></label>
+          <input type="text" id="fieldName" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="fieldEmail">メールアドレス <span class="required">*</span></label>
+          <input type="email" id="fieldEmail" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="fieldSubject">件名 <span class="required">*</span></label>
+          <input type="text" id="fieldSubject" name="subject" required>
+        </div>
+        <div class="form-row">
+          <label for="fieldMessage">本文 <span class="required">*</span></label>
+          <textarea id="fieldMessage" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">送信</button>
+      </form>
+
+      <ul class="sns-links reveal">
+        <li><a href="https://twitter.com/Akchamey" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/channel/UC540b0vUhg4t75pzHTs0hgA" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <p>&copy; 2026 Ayanao</p>
+</footer>
+
+<!-- ===================== MODAL ===================== -->
+<div class="modal" id="workModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="modalCloseBtn" aria-label="閉じる">&times;</button>
+    <div class="modal-video" id="modalVideoWrap">
+      <!-- iframe injected/destroyed dynamically by js/main.js -->
+    </div>
+    <div class="modal-info">
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-meta">
+        <span class="modal-year" id="modalYear"></span>
+        <span class="modal-role" id="modalRole"></span>
+      </div>
+      <p class="modal-desc" id="modalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/works-data.js?v=7"></script>
+<script src="js/main.js?v=7"></script>
+</body>
+</html>
