@@ -82,7 +82,10 @@
     "northern-3.mp4",
     "lolireq-1.mp4",
     "lolireq-2.mp4",
-    "lolireq-3.mp4"
+    "lolireq-3.mp4",
+    "guren-1.mp4",
+    "guren-2.mp4",
+    "guren-3.mp4"
   ];
 
   function initHeroBackground() {

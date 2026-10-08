@@ -9,6 +9,15 @@
 
 const WORKS = [
   {
+    title: "紅蓮の弓矢 (Cover MV)",
+    year: "",
+    role: "Motion Graphics",
+    description: "hololive English -Justice-「紅蓮の弓矢」Cover MV のMusic Videoを担当。",
+    platform: "youtube",
+    videoId: "P_C91D1fKqM",
+    thumbnail: ""
+  },
+  {
     title: "Jump High！",
     year: "",
     role: "Motion Graphics",
