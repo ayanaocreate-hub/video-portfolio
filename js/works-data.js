@@ -9,6 +9,15 @@
 
 const WORKS = [
   {
+    title: "いつまでも極彩色",
+    year: "",
+    role: "Motion Graphics",
+    description: "The 4gnalZ「いつまでも極彩色」Official Music Video のMusic Videoを担当。",
+    platform: "youtube",
+    videoId: "Eh3i-mKDVac",
+    thumbnail: ""
+  },
+  {
     title: "紅蓮の弓矢 (Cover MV)",
     year: "",
     role: "Motion Graphics",

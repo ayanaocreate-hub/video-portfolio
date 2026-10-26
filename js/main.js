@@ -50,6 +50,9 @@
      ========================================================== */
 
   var HERO_CLIPS = [
+    "gokusai-1.mp4",
+    "gokusai-2.mp4",
+    "gokusai-3.mp4",
     "jumphigh-1.mp4",
     "jumphigh-2.mp4",
     "jumphigh-3.mp4",
